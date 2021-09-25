@@ -1,4 +1,4 @@
-# Ninja
+# 搬运Waikiki大佬的Ninja
 
 一次对于 koa2 vue3 vite 的简单尝试
 
@@ -23,10 +23,21 @@ Ninja 仅支持 qinglong 2.8+
 - [ ] 采用自己的数据库，实现无视面板替换通知备注
 - [ ] 账号管理面板
 
-## 文档
+## 安装环境
+第一步安装docker
 
-### 容器内
+sudo yum check-update
+curl -sSL https://get.daocloud.io/docker | sh
+sudo systemctl start docker
+sudo systemctl status docker
+sudo systemctl enable docker
 
+第二步安装docker-compose
+
+sudo curl -L "https://github.com/docker/compose/releases/download/1.24.1/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+
+chmod +x /usr/local/bin/docker-compose
+### 第三步安装青龙
 1. 容器映射 5701 端口，ninja 目录至宿主机
 
    例（docker-compose）：
@@ -76,7 +87,7 @@ Ninja 仅支持 qinglong 2.8+
      whyour/qinglong:latest
    ```
 
-2. 进容器内执行以下命令
+2. 进容器内执行以下命令，docker exec -it qinglong bash  本文机器容器名为qinglong
 
    **进容器内执行以下命令**
 
@@ -177,3 +188,5 @@ A：一般为端口映射错误/失败，请自行检查配置文件。
 
 Q：为什么访问白屏？  
 A：使用现代的浏览器，而不是古代的。
+
+小丑哥QQ97999266
