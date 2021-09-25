@@ -81,7 +81,7 @@ Ninja 仅支持 qinglong 2.8+
    **进容器内执行以下命令**
 
    ```bash
-   git clone https://github.com/wjx0428/ninja.git /ql/ninja
+   git clone https://github.com/97999266/xiaochouge.git /ql/ninja
    cd /ql/ninja/backend
    pnpm install
    pm2 start
